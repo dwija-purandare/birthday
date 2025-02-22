@@ -5,3 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ride: "carousel",
     });
 });
+
+window.onclick = function() {
+    audioElement = document.getElementById("background_music");
+    audioElement.play();
+}
