@@ -72,7 +72,52 @@ body {
     // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.icon {
-    font-size: 40px;
-    color: skyblue;
+#music {
+    animation: position_color_change 0.5s infinite;
+    font-size: 25px;
+}
+
+#cake {
+    animation: position_color_change_reverse 0.5s infinite;
+    font-size: 25px;
+}
+
+.music_block{
+    display: inline-block;
+}
+
+.music_st {
+    color: lightgreen; 
+    font-family: "Tiro Devanagari Marathi", serif;
+}
+
+@keyframes position_color_change {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    from {
+        color: skyblue;
+    }
+    to {
+        color: yellow;
+    }
+}
+
+
+@keyframes position_color_change_reverse {
+    0%, 100% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    from {
+        color: skyblue;
+    }
+    to {
+        color: yellow;
+    }
 }
